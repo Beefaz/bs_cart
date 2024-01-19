@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+thead {
+    border-width: 1px 0 2px 0;
+}
+
+input {
+    width: 100px;
+}
+
+.table > :not(caption) > * > * {
+    border-bottom-width: 0;
+}
+

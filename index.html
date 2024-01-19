@@ -4,11 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bs_cart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"
+            integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
+<main class="container">
+    <h1 class="text-center mt-5">Shopping cart</h1>
+    <div class="text-center"><span class="text-info fw-bold fst-italic">3 </span>items in your cart</div>
+    <div class="table-responsive-xl mt-5">
+        <table class="table">
+            <thead>
+            <tr >
+                <th class="fw-bold fs-5 px-3">Product</th>
+                <th class="fw-bold fs-5 px-3">Price</th>
+                <th class="fw-bold fs-5 px-3">Quantity</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border-top">
+                <td class="p-3">
+                    <div class="d-flex">
+                        <img src="holder.js/250x250?bg=5fa9f8&fg=ffffff" class="rounded"/>
+                        <div class="ms-4 d-flex flex-column">
+                            <div class="fw-bold fs-2">Product name</div>
+                            <div class="text-secondary fs-5">Brand & Name</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="p-3">
+                    $49.00
+                </td>
+                <td class="p-3">
+                    <input type="number" value="1" class="border rounded text-center py-2"/>
+                </td>
+                <td class="p-3">
+                    <div class="d-inline-flex flex-nowrap">
+                        <button type="button" class="btn btn-outline-dark me-2">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-top">
+                <td class="p-3">
+                    <div class="d-flex">
+                        <img src="holder.js/250x250?bg=5fa9f8&fg=ffffff" class="rounded"/>
+                        <div class="ms-4 d-flex flex-column">
+                            <div class="fw-bold fs-2">Product name</div>
+                            <div class="text-secondary fs-5">Brand & Name</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="p-3">
+                    $49.00
+                </td>
+                <td class="p-3">
+                    <input type="number" value="1" class="border rounded text-center py-2"/>
+                </td>
+                <td class="p-3">
+                    <div class="d-inline-flex flex-nowrap">
+                        <button type="button" class="btn btn-outline-dark me-2">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-top">
+                <td class="p-3">
+                    <div class="d-flex">
+                        <img src="holder.js/250x250?bg=5fa9f8&fg=ffffff" class="rounded"/>
+                        <div class="ms-4 d-flex flex-column">
+                            <div class="fw-bold fs-2">Product name</div>
+                            <div class="text-secondary fs-5">Brand & Name</div>
+                        </div>
+                    </div>
+                </td>
+                <td class="p-3">
+                    $49.00
+                </td>
+                <td class="p-3">
+                    <input type="number" value="1" class="border rounded text-center py-2"/>
+                </td>
+                <td class="p-3">
+                    <div class="d-inline-flex flex-nowrap">
+                        <button type="button" class="btn btn-outline-dark me-2">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="bi bi-trash-fill"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container d-flex justify-content-between mb-5">
+        <div class="d-flex justify-content-between align-items-end">
+            <div class="text-primary d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                </svg>
+                <span class="ms-2">Continue shopping</span>
+            </div>
+        </div>
+        <div class="text-end">
+            <div class="h2">Subtotal:</div>
+            <div class="h1">$99.00</div>
+            <button type="button" class="btn btn-primary px-5 py-1 fs-4">Checkout</button>
+        </div>
+    </div>
 </main>
 </body>
 </html>
